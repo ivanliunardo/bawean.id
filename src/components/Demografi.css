@@ -1,0 +1,46 @@
+.mapdesc-container{
+    padding: 4rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map video{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.desc{
+    align-items: center;
+    justify-content: center;
+}
+
+.desc h1{
+    text-align: center;
+    color:#53d2dc;
+    padding-bottom: 1rem;
+}
+
+.desc h3{
+    text-align: justify;
+    color:rgb(38, 100, 142);
+}
+
+@media screen and (max-width: 1024px) {
+.mapdesc-container{
+    display: inline-block;
+}
+
+.map video {
+    width: 100%;
+}
+
+.desc {
+    padding-top: 0.5wrem;
+}
+
+}
