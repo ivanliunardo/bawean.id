@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-/* import Wisata from './components/pages/Wisata';
-import Produk from './components/pages/Produk';
+import Wisata from './components/pages/Wisata';
+/* import Produk from './components/pages/Produk';
 import Budaya from './components/pages/Budaya;
 import Blog from './components/pages/Blog;
 import SignUp from './components/pages/SignUp'; */
@@ -16,8 +16,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          {/* <Route path='/wisata' component={Wisata} />
-          <Route path='/produk' component={Produk} />
+          <Route path='/wisata' component={Wisata} />
+          {/* <Route path='/produk' component={Produk} />
           <Route path='/budaya' component={Budaya} />
           <Route path='/blog' component={Blog} />
           <Route path='/sign-up' component={SignUp} /> */}
