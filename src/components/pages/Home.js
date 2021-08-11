@@ -7,8 +7,8 @@ import Demografi from '../Demografi';
 import TravelReason from '../TravelReason';
 import TravelWays from '../TravelWays';
 import Homestay from '../HomestayBanner';
-import FreqAskQue from '../FAQ';
 import Footer from '../Footer';
+import FrequentlyAskedQuestions from '../FAQ';
 
 
 
@@ -23,7 +23,7 @@ function Home() {
     <TravelReason />
     <TravelWays />
     <Homestay />
-    <FreqAskQue />
+    <FrequentlyAskedQuestions />
     <Footer />
     </>
   );
