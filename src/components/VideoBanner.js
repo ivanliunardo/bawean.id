@@ -1,47 +1,46 @@
-import axios from 'axios';
-import React from 'react';
+import {axios} from './axios';
+import React, {useEffect,useState} from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './VideoBanner.css';
 
-class VideoBanner extends React.Component {
-  state = {
-    video: "/videos/hero.mp4",
-    title: "Visit Pulau Bawean",
-    text: "Reprehenderit aliquip adipisicing non Lorem."
-  }
+function VideoBanner() {
+  const [videoBanner, setvideoBanner] = useState([]);
 
-  componentDidMount(){
-    axios.get('/vidbanner').then(res =>{
-      this.setState(
-        {
-        video: res.data.video,
-        title: res.data.title,
-        text: res.data.text
-        }
-      );
-    })
-  }
+    useEffect(() =>{
+        axios
+        .get("/videobanner")
+        .then(response => {
+            console.log("Response:", response)
+            setvideoBanner(response.data)
+        })
+        .catch((err) => {
+            console.log("Error:", err)
+        })
+    }, []);
 
-  render(){
     return (
-      <div className='hero-container'>
-        <video src={this.state.video} autoPlay loop muted />
-        <h1>{this.state.title}</h1>
-        <p>{this.state.text}</p>
-        <div className='hero-btns'>
-          <Button
-            className='btns'
-            buttonStyle='btn--primary'
-            buttonSize='btn--large'
-            onClick={console.log('hey')}
-          >
-            KUNJUNGI BAWEAN
-          </Button>
-        </div>
+      <div>
+        {
+          videoBanner.map(vid =>
+            <div className='hero-container'>
+              <video src={vid.video} autoPlay loop muted />
+                <h1>{vid.title}</h1>
+                <p>{vid.text}</p>
+              <div className='hero-btns'>
+              <Button
+                className='btns'
+                buttonStyle='btn--primary'
+                buttonSize='btn--large'
+              >
+                KUNJUNGI BAWEAN
+              </Button>
+              </div>
+            </div>
+            )
+        }
       </div>
-    );
+    )
   }
-}
 
 export default VideoBanner;
