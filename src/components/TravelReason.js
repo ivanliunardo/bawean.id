@@ -1,65 +1,58 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import 'aos/dist/aos.css';
 import '../App.css';
 import './TravelReason.css';
-import axios from 'axios';
+import {axios} from './axios';
 
-class TravelReason extends React.Component{
-    state = {
-        title: "Alasan Pergi Ke Bawean",
-        img: "/images/img-9.jpg",
-        reasons: [
-            {
-                number: "1",
-                text: "Aliquip ut incididunt Lorem officia labore elit nostrud dolor non adipisicing occaecat excepteur."
-            },
-            {
-                number: "2",
-                text: "Duis pariatur id elit et."
-            }
-        ]
-    }
+function TravelReason() {
+    const[reasons, setReasons] = useState([]);
 
-    componentDidMount(){
-        axios.get('/reason').then(res => {
-            this.setState(
-                {
-                    reasons: res.data.reasons,
-                    title: res.data.title,
-                    img: res.data.img
-                }
-            );
+    useEffect(() => {
+        axios
+        .get("/reasons")
+        .then(response => {
+            console.log("Response:", response)
+            setReasons(response.data)
         })
-    }
-
-    render(){
-        return(
-            <div className='content'>
-                <div data-aos='fade-up' className='content-title'>
-                    <h1 class='title'>{this.state.title}</h1>
-                </div>
-                <div className='content-container'>
+        .catch((err) => {
+            console.log("Error:", err)
+        })
+    }, []);
+    
+    return(
+            <div className='content'> 
+            {
+                reasons.map(rsns=>
+                    <div data-aos='fade-up' className='content-title'>
+                        <h1 class='title'>{rsns.title}</h1>
+                    
+                    <div className='content-container'>
                     <div className='text-container'>
-                        {this.state.reasons.map(reason => (
-                            <div data-aos='fade-up' className='text-content'>
-                                <div className='icon-container'>
-                                    <div className='icon-circle'>
-                                        <div className='icon-number'>
-                                            {reason.number}
+                    {
+                        rsns.reason.map(rsn =>
+                                
+                                    <div data-aos='fade-up' className='text-content'>
+                                        <div className='icon-container'>
+                                            <div className='icon-circle'>
+                                                <div className='icon-number'>
+                                                {rsn.number}
+                                                </div>
+                                            </div>
                                         </div>
+                                        <h2>{rsn.text}</h2>
                                     </div>
-                                </div>
-                            <h2>{reason.text}</h2>
-                            </div>
-                        ))}
+                        )
+                    }
                     </div>
-                    <div data-aos='fade-up' className='img-container'>
-                        <img src={this.state.img} />
+                        <div data-aos='fade-up' className='img-container'>
+                            <img src={rsns.img} />
+                        </div>
                     </div>
-                </div>
-            </div>
-        )
-    }
+                    </div>
+                )
+            }
+            </div>               
+    )
 }
 
 export default TravelReason
