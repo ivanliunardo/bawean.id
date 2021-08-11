@@ -1,0 +1,101 @@
+{
+  "demografi": [
+    {
+      "video": "/videos/map.mp4",
+      "title": "Ex sint dolor anim ea officia do in duis.",
+      "text": "Esse culpa velit laboris nulla aliqua. Aliqua enim Lorem laboris nisi. Laboris qui enim esse fugiat velit elit nisi. Esse ipsum est magna elit cupidatat quis adipisicing ad consectetur nulla et."
+    }
+  ],
+  "reasons": [
+    {
+    "title": "Alasan Pergi Ke Bawean",
+    "img": "/images/img-9.jpg",
+    "reason": [
+    {
+      "number": "5",
+      "text": "Aliquip ut incididunt Lorem officia labore elit nostrud dolor non adipisicing occaecat excepteur."
+    },
+    {
+      "number": "2",
+      "text": "Duis pariatur id elit et."
+    },
+    {
+      "number": "5",
+      "text": "Aliquip ut incididunt Lorem officia labore elit nostrud dolor non adipisicing occaecat excepteur."
+    }]
+  }],
+  "faqs": [
+    {
+      "id":1,
+      "question":"Apa itu bawean?",
+      "answer":"Bawean adalah salah satu pulau indah di Indonesia",
+      "published_at":"2021-08-08T08:49:23.161Z",
+      "created_at":"2021-08-08T08:49:14.450Z",
+      "updated_at":"2021-08-08T08:49:23.187Z"
+    },
+    {
+      "id":2,
+      "question":"Bagaiaman kondisi masyarakat bawean?",
+      "answer":"Ramah baik dan nyaman",
+      "published_at":"2021-08-10T16:44:28.247Z",
+      "created_at":"2021-08-10T16:44:25.894Z",
+      "updated_at":"2021-08-10T16:44:28.325Z"
+    }
+  ],
+  "homestay": [
+    {
+      "title": "Homestay di Pulau Bawean!",
+      "text": "Sunt cillum ipsum officia excepteur. Aliqua enim aliqua ut officia labore laborum sit. Id est aute mollit ex aliquip ut ut enim Lorem ipsum officia exercitation. Laborum ex anim est dolore tempor officia.",
+      "img": "/images/img-9.jpg"
+    }
+  ],
+  "videobanner": [
+    {
+      "video": "/videos/hero.mp4",
+      "title": "Visit Pulau Bawean",
+      "text": "Exercitation irure reprehenderit culpa aute non minim sint fugiat incididunt."
+    }
+  ],
+  "travelways": [
+    {
+    "title": "Cara Pergi Ke Pulau Bawean",
+    "cards": [
+      {
+        "img": "/images/img-9.jpg",
+        "text": "Exercitation duis nostrud non amet aliqua occaecat nulla duis consequat et."
+      },
+      {
+        "img": "/images/img-2.jpg",
+        "text": "Occaecat ea et esse est cupidatat esse non minim sint."
+      },
+      {
+        "img": "/images/img-4.jpg",
+        "text": "Irure laborum nulla Lorem pariatur enim elit aute Lorem laborum dolor nulla ea commodo."
+      },
+      {
+        "img": "/images/img-4.jpg",
+        "text": "Irure laborum nulla Lorem pariatur enim elit aute Lorem laborum dolor nulla ea commodo."
+      }
+    ]
+  }
+  ],
+  "footer":[
+    {
+      "title":"Bagikan Pengalamanmu Berkunjung di Pulau Bawean!",
+      "socials": [
+        {
+          "facbook" : "",
+          "instagram" : "",
+          "youtube": "",
+          "twitter" : "",
+          "linkedin" : ""
+        }
+      ]
+    }
+  ],
+  "feedback":[
+    {
+
+    }
+  ]
+}
