@@ -192,5 +192,15 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
+  .footer-main{
+    flex-direction: column;
+  }
+
+  .footer-link-wrapper{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
 }
