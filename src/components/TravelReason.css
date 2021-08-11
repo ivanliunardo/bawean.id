@@ -91,6 +91,12 @@ span.title-extend{
     .img-container{
         display: none;
     }
+
+    .text-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     
     .text-container{
         width: 100%;
