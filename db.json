@@ -84,18 +84,202 @@
       "title":"Bagikan Pengalamanmu Berkunjung di Pulau Bawean!",
       "socials": [
         {
-          "facbook" : "",
-          "instagram" : "",
-          "youtube": "",
-          "twitter" : "",
-          "linkedin" : ""
+          "facbook" : "https://facebook.com",
+          "instagram" : "https://instagram.com",
+          "youtube": "https://youtube.com",
+          "twitter" : "https://twitter.com",
+          "linkedin" : "https://linkedin.com"
         }
       ]
     }
   ],
-  "feedback":[
+  "imagebanner":[
     {
-
+      "image": "images/img-2.jpg"
+    }
+  ],
+  "wisatacards":[
+    {
+      "img": "/images/img-1.jpg",
+      "name": "Air Panas",
+      "label": "Pemandian",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-2.jpg",
+      "name": "Pantai Kepuh",
+      "label": "Pantai",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-3.jpg",
+      "name": "Air Terjun Carabaka",
+      "label": "Air Terjun",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-4.jpg",
+      "name": "Pantai Diponggo",
+      "label": "Pantai",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    }     
+  ],
+  "produkcards":[
+    {
+      "img": "/images/img-5.jpg",
+      "name": "Dodol Diponggo",
+      "label": "Makanan",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-6.jpg",
+      "name": "Es Teler Kepuh",
+      "label": "Minuman",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-7.jpg",
+      "name": "Tenunan Khas Bawean",
+      "label": "Barang Pakai",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-4.jpg",
+      "name": "Batik Kepuhlegundi",
+      "label": "Pakaian",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-5.jpg",
+      "name": "Dodol Diponggo",
+      "label": "Makanan",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-6.jpg",
+      "name": "Es Teler Kepuh",
+      "label": "Minuman",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-7.jpg",
+      "name": "Tenunan Khas Bawean",
+      "label": "Barang Pakai",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-4.jpg",
+      "name": "Batik Kepuhlegundi",
+      "label": "Pakaian",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-5.jpg",
+      "name": "Dodol Diponggo",
+      "label": "Makanan",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-6.jpg",
+      "name": "Es Teler Kepuh",
+      "label": "Minuman",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-7.jpg",
+      "name": "Tenunan Khas Bawean",
+      "label": "Barang Pakai",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-4.jpg",
+      "name": "Batik Kepuhlegundi",
+      "label": "Pakaian",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-5.jpg",
+      "name": "Dodol Diponggo",
+      "label": "Makanan",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-6.jpg",
+      "name": "Es Teler Kepuh",
+      "label": "Minuman",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-7.jpg",
+      "name": "Tenunan Khas Bawean",
+      "label": "Barang Pakai",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
+    },
+    {
+      "img": "/images/img-4.jpg",
+      "name": "Batik Kepuhlegundi",
+      "label": "Pakaian",
+      "location":"Tambak",
+      "price": "Rp 100.000 HTM",
+      "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
+      "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
     }
   ]
 }
