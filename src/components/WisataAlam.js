@@ -1,5 +1,5 @@
-import axios from "axios";
-import React, {useState} from "react";
+import {axios} from "./axios";
+import React, {useState, useEffect} from "react";
 import '../App.css';
 import './WisataAlam.css';
 import Popup from './Popup';
@@ -10,68 +10,29 @@ function WisataAlam(){
 
     const [isOpen, setIsOpen] = useState(false);
     const [popupIndex, setPopupIndex] = useState(0);
+    const [wisatacards, setWisataCards] = useState([]);
 
     const togglePopup = (index) => {
     setIsOpen(!isOpen);
     setPopupIndex(index);
     }
 
-    const [wisatacards] = useState([
-            {
-            img: "/images/img-1.jpg",
-            name: "Air Panas",
-            label: "",
-            location:"Tambak",
-            price: "Rp 100.000 HTM",
-            desc: "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim."
-            , link:"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"},
-            {
-                img: "/images/img-4.jpg",
-                name: "Air AAAVA",
-                label: "",
-                location:"Tambak",
-                price: "Rp 100.000 HTM",
-                desc: "" 
-            },
-            {
-                img: "/images/img-2.jpg",
-                name: "Air AXAAA",
-                label: "",
-                location:"Tambak",
-                price: "Rp 100.000 HTM",
-                desc: "" 
-            },
-            {
-                img: "/images/img-3.jpg",
-                name: "Air AAZAA",
-                label: "",
-                location:"Tambak",
-                price: "Rp 100.000 HTM",
-                desc: "" 
-            }
-        ],);
- 
-
-React.useEffect(() => {
-    axios.get('/datawisata').then(res=>{
-        this.setState(
-            {
-                img: res.data.img,
-                name: res.data.name,
-                location: res.data.location,
-                label: res.data.label,
-                price: res.data.price,
-                desc: res.data.desc,
-            }
-            
-        )
-    });
-}, []);
+    useEffect(() =>{
+        axios
+        .get("/wisatacards")
+        .then(response => {
+            console.log("Response:", response)
+            setWisataCards(response.data)
+        })
+        .catch((err) => {
+            console.log("Error:", err)
+        })
+    }, []);
 
     const { search } = window.location;
     const query = new URLSearchParams(search).get('s');
     const [searchQuery, setSearchQuery] = useState(query || '');
-    const filterPosts = (wisatacards, query) => {
+    const filterCards = (wisatacards, query) => {
         if (!query) {
             return wisatacards;
         }
@@ -82,7 +43,7 @@ React.useEffect(() => {
         });
     };
     
-    const filteredPosts = filterPosts(wisatacards, searchQuery.toLocaleLowerCase());
+    const filteredCards = filterCards(wisatacards, searchQuery.toLocaleLowerCase());
 
     return(
         <div className='wisata-container'>
@@ -90,10 +51,10 @@ React.useEffect(() => {
             <div className='wisata-card-container'>
                 <div className='wisata-card-wrapper'>
                     <div className='searchbox' data-aos='fade-up'>
-                    <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="Cari Wisata..."/>
+                        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} placeholder="Cari Wisata..."/>
                     </div>
                     <ul data-aos="fade-up" className='wisata-card'>
-                        {filteredPosts.map((props, index) =>(
+                        {filteredCards.map((props, index) =>(
                             <>
                             <li onClick={() => togglePopup(index)} data-aos='fade-up' className='wisata-cards-item'>
                             <div className='wisata-card-link'>
@@ -118,14 +79,14 @@ React.useEffect(() => {
                     {isOpen &&
                     <Popup
                         content={<>
-                            <div className='wisata-popup-name'>{wisatacards[popupIndex].name}</div>
-                            <img className='wisata-popup-image' src={wisatacards[popupIndex].img} />
-                            <div className='wisata-popup-desc'>{wisatacards[popupIndex].desc}</div>
-                            <div className='wisata-popup-price'>{wisatacards[popupIndex].price}</div>
-                            <div className='wisata-popup-location'>{wisatacards[popupIndex].location}</div>
+                            <div className='wisata-popup-name'>{filteredCards[popupIndex].name}</div>
+                            <img className='wisata-popup-image' src={filteredCards[popupIndex].img} />
+                            <div className='wisata-popup-desc'>{filteredCards[popupIndex].desc}</div>
+                            <div className='wisata-popup-price'>{filteredCards[popupIndex].price}</div>
+                            <div className='wisata-popup-location'>{filteredCards[popupIndex].location}</div>
                             <div className='gmaps-link'>
                             <Button className='btns' buttonStyle='btn--primary' buttonSizae='btn--medium'>
-                            <a  href={wisatacards[popupIndex].link} target='_blank' className='btns'>Buka Google Maps</a></Button>
+                            <a  href={filteredCards[popupIndex].link} target='_blank' className='btns'>Buka Google Maps</a></Button>
                             </div>
                         </>}
                         handleClose={togglePopup}
