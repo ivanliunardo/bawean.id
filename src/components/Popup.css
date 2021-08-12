@@ -1,4 +1,3 @@
-/* Popup style */
 .popup-box {
     position: fixed;
     background: #00000050;
@@ -22,6 +21,12 @@
     padding: 20px;
     border: 1px solid #999;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .box::-webkit-scrollbar {
+    display: none;
   }
   
   .close-icon {
