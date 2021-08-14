@@ -281,5 +281,40 @@
       "desc": "Do dolore aliquip ut laboris Lorem magna fugiat duis in consectetur in quis elit. Dolor do mollit aliquip quis ipsum fugiat do culpa deserunt excepteur irure ex quis occaecat. Nostrud Lorem exercitation et laboris labore ea cillum reprehenderit proident elit qui laborum velit. Reprehenderit eiusmod aliqua culpa exercitation cillum aliqua id mollit consequat anim ut enim.",
       "link":"https://goo.gl/maps/SFaMZBGyzHjKMMNy8"
     }
+  ],
+  "blog":[
+    {
+      "id": 1,
+      "title": "Dolor amet ea qui voluptate magna aute nulla.",
+      "img": "/images/img-1.jpg",
+      "author": "Ivan Liu",
+      "published_at":"Selasa, 21 February 2019",
+      "desc": "Exercitation culpa quis Lorem minim deserunt dolore. Cupidatat magna aliquip ipsum consectetur dolor magna pariatur ea proident cupidatat cillum qui cupidatat. Minim amet aliqua non non ullamco. Aute Lorem proident ipsum deserunt amet. Elit pariatur velit ullamco ea ut cupidatat est labore anim reprehenderit do. Do cillum exercitation Lorem in aute irure laboris mollit magna in sunt magna ipsum. Aute nisi qui veniam eiusmod amet aute exercitation."
+    },
+    {
+      "id": 2,
+      "title": "Labore ut quis nisi non veniam deserunt.",
+      "img": "/images/img-2.jpg",
+      "author": "Nanda JR",
+      "published_at":"Jum'at, 11 Oktober 2019",
+      "desc": "Aliquip qui consequat incididunt reprehenderit officia pariatur cillum aliqua. Occaecat eu quis est adipisicing laboris qui magna eiusmod. Laboris dolor do ex sit eiusmod veniam. Aliqua eiusmod esse nostrud esse minim id anim culpa aliquip cillum ut velit. Cupidatat irure officia mollit deserunt ipsum nisi occaecat ad sit aute nisi. Ex commodo mollit deserunt enim anim."
+    },
+    {
+      "id": 3,
+      "title": "Minim ullamco ex non ea.",
+      "img": "/images/img-3.jpg",
+      "author": "Exvan Wibowo",
+      "published_at":"Minggu, 31 Desember 2019",
+      "desc": "Dolore irure reprehenderit cillum nulla mollit adipisicing ea quis excepteur non. Magna quis cupidatat anim sunt. Aliqua exercitation sunt aliquip nostrud officia eiusmod. Nisi elit pariatur do occaecat quis amet culpa nisi eiusmod laborum consectetur pariatur velit fugiat. Ea amet id et culpa veniam nisi laborum. Irure magna excepteur eiusmod aliqua officia fugiat laborum elit. Do incididunt velit fugiat laboris anim aliquip nulla dolore adipisicing reprehenderit mollit est culpa irure."
+    },
+    {
+      "id": 4,
+      "title": "Sit reprehenderit dolore do aliqua excepteur ex quis reprehenderit consectetur.",
+      "img": "/images/img-4.jpg",
+      "author": "Nemo Diama",
+      "published_at":"Rabu, 5 Agustus 2019",
+      "desc": "Esse ad est esse officia exercitation ea exercitation laboris. Do tempor enim nostrud et nisi in amet est quis amet. Sint voluptate et dolor adipisicing incididunt aute reprehenderit do pariatur ea. Enim do elit consequat duis culpa. Proident esse mollit irure Lorem enim dolor est cupidatat amet amet."
+    }
+    
   ]
 }
